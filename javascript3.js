@@ -107,8 +107,13 @@ function paiva() {
     var minuutti = pvm.getMinutes();
     var tanaan = pvm.getDate();
     var kuukausi = pvm.getMonth() + 1;
+    
+    //fixes the minutes to display correctly
+    if (minuutti < 10) {
+      minuutti = "0" + minuutti;
+    }
 
-    var hello = "Hei, tänään on " + tanaan + "." + kuukausi + " ja kello on " + tunti + ":" + minuutti;
+    var hello = "Hei, tänään on " + tanaan + "." + kuukausi + " ja kello on " + tunti + ":" + minuutti + ".";
     document.getElementById("date").innerHTML = hello;
 
 }

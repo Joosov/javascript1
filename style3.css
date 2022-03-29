@@ -116,6 +116,7 @@ div.list {
 }
 .invalid {
   animation: shake 300ms;
+ 
 }
 @keyframes shake {
   25% {
