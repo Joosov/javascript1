@@ -1,6 +1,4 @@
-# javascript1
-
-# Project To-Do 2022
+# Project JavaScript 1: To-Do
 
 ## Description of the project
 A small to-do app made as a school assignment spring 2022
