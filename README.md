@@ -6,7 +6,7 @@
 A small to-do app made as a school assignment spring 2022
 - Includes a basic javascript functionality to add, read, mark as done and remove notes
 - Includes seperate CSS and JS files
-- Published on [Netlify](hhttps://lambent-madeleine-efc7d9.netlify.app/)
+- Published on [Netlify](https://lambent-madeleine-efc7d9.netlify.app/)
 
 ## Technologies used
 
