@@ -148,3 +148,11 @@ function btn1() {
     document.location.reload(true);
 
 }
+
+//Add to list by pressing simply enter
+document.getElementById("notetext").addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    document.getElementById("add-btn").click();
+    return false;
+  }
+});
