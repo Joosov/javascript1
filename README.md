@@ -18,7 +18,7 @@ A small to-do app made as a school assignment spring 2022
 - Only native javascript used
 - Learned from course materials and online guides
 - Added a small hello note with date to top of the page
-
+- Local Storage functionality to save old notes to memory
 
 ### CSS
 - Added some css stylings to make the site visually better looking
