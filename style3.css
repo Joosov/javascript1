@@ -1,173 +1,142 @@
 body {
-    color: rgb(19, 38, 59);
-    font-family: 'Georgia', 'Times New Roman', 'Times', serif;
-    line-height: 1.8;
-    letter-spacing: 1px;
-    background-color: rgb(216, 206, 199);
-    user-select: none;
-    padding: 0.5em;
-  }
-
- #top {
-    height: 5em;
-} 
-
-  ul {
-    padding: 1em;
-  }
-  
-  li {
-    cursor: pointer;
-    position: relative;
-    padding: 1em;
-    background-color:antiquewhite;
-    font-size: 1.1em;
-    list-style-type: none;
-    border: none;
-    border-radius: 0.1em;
-    border-style: solid;
-    border-width: 0.2em;
-    border-color: rgb(197, 186, 177);
-  }
-  
-  li:hover {
-    background: rgb(97, 138, 112);
-  }
-  
-  li.checked {
-    background: rgb(109, 147, 110);
-    color: black;
-    text-decoration: line-through;
-  }
-  
-    li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: green;
-    border-style: solid;
-    border-width: 0 4px 4px 0;
-    top: 20px;
-    right: 3.5em;
-    transform: rotate(45deg);
-    height: 30px;
-    width: 15px;
-  
-  }
-  
-  .close {
-    position: absolute;
-    float: right;
-    right: 0;
-    top: 0;
-    padding: 1em;
-   
-   
-  }
-  
-  .close:hover {
-    background-color: rgb(134, 47, 27);
-    color:rgb(216, 206, 199);    
-
-  }
-  
-
-  div.addStuff {
-
-    background-color:rgb(19, 38, 59); 
-    color:rgb(216, 206, 199);    
-    padding: 1em;
-    text-align: center;
-
-  }
-  
-  
-  input {
-    margin: 0;
-    border: none;
-    border-radius: 0.2em;
-    width: 60%;
-    padding: 10px;
-    float: left;
-  }
-  
-  .btn-success {
-    padding: 10px;
-    margin-right: 10px;
-    width: 30%;
-    height:3.1em;
-    float: right;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 0.2em;
-  }
-  
-  h1 {
-  
-    letter-spacing: 2px;
-    font-family: 'Georgia', 'Times New Roman', 'Times', serif;
-    background-color:rgb(19, 38, 59); 
-    color:rgb(216, 206, 199);
-    padding: 1em;
-
+  color: rgb(19, 38, 59);
+  font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  background-color: rgb(216, 206, 199);
+  user-select: none;
+  padding: 0.5em;
 }
-
+#top {
+  height: 5em;
+}
+ul {
+  padding: 1em;
+}
+li {
+  cursor: pointer;
+  position: relative;
+  padding: 1em;
+  background-color:antiquewhite;
+  font-size: 1.1em;
+  list-style-type: none;
+  border: none;
+  border-radius: 0.1em;
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: rgb(197, 186, 177);
+}
+li:hover {
+  background: rgb(97, 138, 112);
+}
+li.checked {
+  background: rgb(109, 147, 110);
+  color: black;
+  text-decoration: line-through;
+}
+li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: green;
+  border-style: solid;
+  border-width: 0 4px 4px 0;
+  top: 20px;
+  right: 3.5em;
+  transform: rotate(45deg);
+  height: 30px;
+  width: 15px;
+}
+.close {
+  position: absolute;
+  float: right;
+  right: 0;
+  top: 0;
+  padding: 1em;
+}
+.close:hover {
+  background-color: rgb(134, 47, 27);
+  color:rgb(216, 206, 199);
+}
+div.addStuff {
+  background-color:rgb(19, 38, 59);
+  color:rgb(216, 206, 199);
+  padding: 1em;
+  text-align: center;
+}
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0.2em;
+  width: 60%;
+  padding: 10px;
+  float: left;
+}
+.btn-success {
+  padding: 10px;
+  margin-right: 10px;
+  width: 30%;
+  height:3.1em;
+  float: right;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.2em;
+}
+h1 {
+  letter-spacing: 2px;
+  font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+  background-color:rgb(19, 38, 59);
+  color:rgb(216, 206, 199);
+  padding: 1em;
+}
 h3 {
-    letter-spacing: 2px;
-    font-family: 'Georgia', 'Times New Roman', 'Times', serif;
-    color:rgb(216, 206, 199);
-    text-align: center;
-    padding: 1em;
-
+  letter-spacing: 2px;
+  font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+  color:rgb(216, 206, 199);
+  text-align: center;
+  padding: 1em;
 }
-
 div.list {
-  background-color:rgb(19, 38, 59); 
+  background-color:rgb(19, 38, 59);
 }
-
 .center {
   margin:auto;
   justify-content: center;
   text-align: center;
   padding: 10px;
 }
-
 #notetext {
   background-color: antiquewhite;
 }
-
-
 #notetext:hover{
   background-color: whitesmoke;
   cursor:pointer;
 }
-
 #notetext:focus {
   cursor:auto;
 }
-
 .invalid {
   animation: shake 300ms;
 }
-
 @keyframes shake {
-  25% { transform: translateX(4px); }
-  50% { transform: translateX(-4px); }
-  75% { transform: translateX(4px); }
-
+  25% {
+      transform: translateX(4px);
+ }
+  50% {
+      transform: translateX(-4px);
+ }
+  75% {
+      transform: translateX(4px);
+ }
 }
-
-
 #footer {
-    width: 100%;
-    background-color: rgb(197, 186, 177);
-    text-align:center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-color: rgb(216, 206, 199);
-    border-style: solid hidden hidden hidden;
-    border-width: 20px;
-    line-height: 2;
-    color: rgb(19, 38, 59);
+  width: 100%;
+  background-color: rgb(197, 186, 177);
+  text-align:center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-color: rgb(216, 206, 199);
+  border-style: solid hidden hidden hidden;
+  border-width: 20px;
+  line-height: 2;
+  color: rgb(19, 38, 59);
 }
-
-
