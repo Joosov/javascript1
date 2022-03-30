@@ -1,22 +1,14 @@
 //creates the array for the notes
 var memorycard = [];
 
-let arrayLength = memorycard.length;
-for (let i = 0; i < arrayLength; i++) {
-
-    let val = array[i];
-    console.log(val)
-
-}
-
 //Creates a remove button to all li elements
 var noteNodes = document.getElementsByTagName("li");
 var i;
 for (i = 0; i < noteNodes.length; i++) {
     var span = document.createElement("SPAN");
-    var txt = document.createTextNode("❌");
+    var text = document.createTextNode("❌");
     span.className = "close";
-    span.appendChild(txt);
+    span.appendChild(text);
     noteNodes[i].appendChild(span);
 }
 
@@ -77,16 +69,16 @@ function newElement() {
     } else {
         document.getElementById("ul").appendChild(li);
         memorycard.push(inputValue);
-        // localStorage.setItem(Date.now(), inputValue);
+        // Work in progress: localStorage.setItem(Date.now(), inputValue);
         localStorage.setItem("memorycard", JSON.stringify(memorycard));
     }
     document.getElementById("notetext").value = "";
 
     //Adding the delete button to the added notes 
     var span = document.createElement("SPAN");
-    var txt = document.createTextNode("❌");
+    var text = document.createTextNode("❌");
     span.className = "close";
-    span.appendChild(txt);
+    span.appendChild(text);
     li.appendChild(span);
 
     for (i = 0; i < close.length; i++) {
@@ -132,7 +124,7 @@ function loadFromSave() {
         //adds the text node to the node list
         node.appendChild(textnode);
 
-        //adds the created li node to the ul list
+        //adds the created li node to the ul list with the wanted elements
         var span = document.createElement("SPAN");
         var txt = document.createTextNode("❌");
         span.className = "close";
@@ -142,17 +134,27 @@ function loadFromSave() {
     }
 }
 
-//clears up the local Storage on command
+//clears up the local Storage on button press
 function btn1() {
     localStorage.clear();
     document.location.reload(true);
 
 }
 
-//Add to list by pressing simply enter
+//Add to list by pressing simply enter on input box
 document.getElementById("notetext").addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
     document.getElementById("add-btn").click();
     return false;
   }
 });
+
+//Work in progress for looping through local storage
+
+let arrayLength = memorycard.length;
+for (let i = 0; i < arrayLength; i++) {
+
+    let val = arrayLength[i];
+    console.log(val)
+
+}

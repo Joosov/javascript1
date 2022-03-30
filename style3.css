@@ -20,18 +20,17 @@ li {
   background-color:antiquewhite;
   font-size: 1.1em;
   list-style-type: none;
-  border: none;
-  border-radius: 0.1em;
+  border-radius: 0.2em;
   border-style: solid;
   border-width: 0.2em;
   border-color: rgb(197, 186, 177);
 }
 li:hover {
-  background: rgb(97, 138, 112);
+  background-color: rgb(203, 176, 154);
 }
 li.checked {
-  background: rgb(109, 147, 110);
-  color: black;
+  background: rgb(124, 179, 144);
+  color: rgba(0, 0, 0, 0.461);
   text-decoration: line-through;
 }
 li.checked::before {
@@ -55,26 +54,31 @@ li.checked::before {
 }
 .close:hover {
   background-color: rgb(134, 47, 27);
-  color:rgb(216, 206, 199);
 }
 div.addStuff {
   background-color:rgb(19, 38, 59);
   color:rgb(216, 206, 199);
   padding: 1em;
   text-align: center;
+  border-top-left-radius: 0.8em;
+  border-top-right-radius: 0.8em;
+}
+div.list {
+  background-color:rgb(19, 38, 59);
 }
 input {
   margin: 0;
   border: none;
   border-radius: 0.2em;
-  width: 60%;
+  width: 70%;
   padding: 10px;
-  float: left;
+  float:left;
+  margin-left: 10px;
 }
 .btn-success {
   padding: 10px;
   margin-right: 10px;
-  width: 30%;
+  width: 20%;
   height:3.1em;
   float: right;
   text-align: center;
@@ -94,9 +98,6 @@ h3 {
   color:rgb(216, 206, 199);
   text-align: center;
   padding: 1em;
-}
-div.list {
-  background-color:rgb(19, 38, 59);
 }
 .center {
   margin:auto;
@@ -138,6 +139,7 @@ div.list {
   border-color: rgb(216, 206, 199);
   border-style: solid hidden hidden hidden;
   border-width: 20px;
+  border-radius: 0.8em;
   line-height: 2;
   color: rgb(19, 38, 59);
 }
